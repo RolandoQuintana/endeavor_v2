@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Endeavor",
+  "version": "1.0.0",
+  "description": "Time blocking and task organization for Google Calendar",
+  "permissions": [
+    "storage",
+    "scripting",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://calendar.google.com/*"
+  ],
+  "action": {
+    "default_title": "Endeavor"
+  },
+  "background": {
+    "service_worker": "background/service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://calendar.google.com/*",
+        "https://www.calendar.google.com/*"
+      ],
+      "js": ["content/calendar-integration.js"],
+      "css": ["content/styles.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "options_page": "options/options.html"
+}

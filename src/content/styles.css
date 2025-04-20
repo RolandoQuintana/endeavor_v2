@@ -1,0 +1,28 @@
+/* Styles for calendar integration */
+.endeavor-dropdown {
+  margin: 8px 0;
+}
+
+.endeavor-section {
+    margin: 8px 0;
+    padding: 8px;
+}
+
+.endeavor-select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #dadce0;
+    background-color: white;
+    font-size: 14px;
+    color: #3c4043;
+}
+
+.endeavor-select:focus {
+    outline: none;
+    border-color: #1a73e8;
+}
+
+.endeavor-select option {
+    padding: 8px;
+}

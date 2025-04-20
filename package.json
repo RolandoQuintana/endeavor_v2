@@ -1,0 +1,14 @@
+{
+  "name": "endeavor-extension",
+  "version": "1.0.0",
+  "description": "Time blocking Chrome extension for Google Calendar",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "watch": "webpack --watch --config webpack.config.js"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^12.0.2",
+    "webpack": "^5.99.6",
+    "webpack-cli": "^5.1.4"
+  }
+}
