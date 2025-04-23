@@ -26,6 +26,7 @@ h1 {
     padding: 15px;
     background: #f8f9fa;
     border-radius: 4px;
+    align-items: center;
 }
 
 input, select {
@@ -64,6 +65,7 @@ button:hover {
     padding: 12px;
     border-radius: 4px;
     justify-content: space-between;
+    color: white;
 }
 
 .endeavor-item span {
@@ -83,4 +85,148 @@ button:hover {
 
 .delete-button:hover {
     background: rgba(255,255,255,0.3);
+}
+
+/* Add these styles */
+.color-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.color-swatch {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+/* Style the select element */
+#colorSelect {
+    min-width: 120px;
+}
+
+/* Add these styles */
+.endeavor-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.endeavor-name {
+    font-size: 14px;
+    min-width: 150px;
+    color: white;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+
+.color-edit {
+    background: rgba(255,255,255,0.2);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+    min-width: 120px;
+}
+
+.color-edit option {
+    background: white;
+    color: #333;
+    padding: 8px;
+}
+
+/* Add these styles for the color select */
+.color-select-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+#colorSelect {
+    padding-left: 30px; /* Make room for the color swatch */
+}
+
+.color-select-swatch {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0,0.1);
+    pointer-events: none;
+}
+
+/* Style for the options */
+#colorSelect option {
+    padding-left: 30px;
+}
+
+/* Custom select styles */
+.custom-select {
+    position: relative;
+    width: 150px;
+    user-select: none;
+}
+
+.selected-color {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    background: white;
+    cursor: pointer;
+}
+
+.selected-color .color-swatch {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.dropdown-arrow {
+    margin-left: auto;
+    font-size: 10px;
+    color: #5f6368;
+}
+
+.color-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    margin-top: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    display: none;
+    z-index: 1000;
+}
+
+.custom-select.open .color-dropdown {
+    display: block;
+}
+
+.color-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.color-option:hover {
+    background: #f1f3f4;
+}
+
+.color-option .color-swatch {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0,0.1);
 }
